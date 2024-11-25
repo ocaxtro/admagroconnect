@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">
+            <span class="green">Agro</span> <span class="black">Connect</span>
+            <i class="fas fa-tree tree-icon"></i>
+        </h1>
+        <form id="form">
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="text" id="cellphone" placeholder="Número de Celular" required>
+            <input type="text" id="state" placeholder="Estado" required>
+            <input type="text" id="city" placeholder="Cidade" required>
+            <input type="text" id="neighborhood" placeholder="Bairro" required>
+            <input type="text" id="houseNumber" placeholder="Número da Casa" required>
+            <select id="propertyType" required>
+                <option value="">Selecione...</option>
+                <option value="Casa">Casa</option>
+                <option value="Condomínio">Condomínio</option>
+                <option value="Empresa">Empresa</option>
+            </select>
+            <input type="text" id="cep" placeholder="CEP" required>
+            <input type="datetime-local" id="datetime" required>
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Celular</th>
+                    <th>Endereço</th>
+                    <th>Data e Hora</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="data-list"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
